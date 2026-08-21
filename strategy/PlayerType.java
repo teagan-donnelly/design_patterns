@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public enum PlayerType {
     GOALIE("Goalie"), FORWARD("Forward"), DEFENCE_MAN("Defence Man");
