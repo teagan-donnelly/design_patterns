@@ -1,7 +1,10 @@
 package strategy;
 
 public class BlockBehavior implements Behavior{
+
+    @Override
     public String play(){
-        //TODO
+        return "Blocks his opponent!!";
     }
+
 }

@@ -14,7 +14,16 @@ public class Team {
 
     //methods listed in the UML diagram
     public void addTeamMember(String firstName, String lastName, PlayerType playerType){
-        //TODO
+        if (playerType == PlayerType.GOALIE){
+            Goalie goalie = new Goalie(firstName, lastName);
+            players.add(goalie);
+        } else if (playerType == PlayerType.FORWARD){
+            Forward forward = new Forward(firstName, lastName);
+            players.add(forward);
+        } else {
+            Defenceman defenceman = new Defenceman(firstName, lastName);
+            players.add(defenceman);
+        }
     }
 
     public void executePlay(PlayerType playerType){

@@ -1,7 +1,10 @@
 package strategy;
 
 public class ShootBehavior implements Behavior {
+
+    @Override
     public String play(){
-        //TODO
+        return "Shoots at the goal!!";
     }
+
 }

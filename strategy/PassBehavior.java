@@ -1,7 +1,10 @@
 package strategy;
 
 public class PassBehavior implements Behavior{
+
+    @Override
     public String play(){
-        //TODO
+        return "Passes the puck!";
     }
+
 }
