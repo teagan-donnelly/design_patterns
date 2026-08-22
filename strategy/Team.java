@@ -6,10 +6,9 @@ public class Team {
     private String teamName; 
     private ArrayList<Player> players;
 
-    public Team(String teamName, ArrayList<Player> players){
+    public Team(String teamName){
         //sets instance varibles
         this.teamName = teamName;
-        this.players = players;
     }
 
     //methods listed in the UML diagram
@@ -27,7 +26,13 @@ public class Team {
     }
 
     public void executePlay(PlayerType playerType){
-        //TODO
+        for(int i = 0; i < players.size(); i++ ){
+            Player player = players.get(i);
+
+            if (player.getPlayerType() == playerType){
+                player.play();
+            }
+        }
     }
 
     //Getters

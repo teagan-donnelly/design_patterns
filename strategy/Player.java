@@ -22,11 +22,12 @@ public abstract class Player {
     public abstract void setBehavior();
 
     public String play(){
-        //TODO
+        setBehavior();
+        return behavior.play();
     }
 
     public String toString(){
-        //TODO
+        return firstName + " " + lastName + " " + playerType;
     }
 
     public PlayerType getPlayerType(){
