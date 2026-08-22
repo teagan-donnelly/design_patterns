@@ -9,6 +9,7 @@ public class Team {
     public Team(String teamName){
         //sets instance varibles
         this.teamName = teamName;
+        this.players = new ArrayList<Player>();
     }
 
     //methods listed in the UML diagram
@@ -30,7 +31,7 @@ public class Team {
             Player player = players.get(i);
 
             if (player.getPlayerType() == playerType){
-                player.play();
+                System.out.println(player.play());
             }
         }
     }
