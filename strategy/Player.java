@@ -1,6 +1,5 @@
 package strategy;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Player {
@@ -12,7 +11,7 @@ public abstract class Player {
     protected Random rand;
     protected PlayerType playerType; 
 
-    public Player(String teamName, ArrayList<Player> players, String firstName, String lastName, PlayerType playerType){
+    public Player(String firstName, String lastName, PlayerType playerType){
         //sets instance varibles
         this.firstName = firstName;
         this.lastName = lastName;

@@ -1,13 +1,17 @@
 package strategy;
 
-public class Defenceman {
-    
+public class Defenceman extends Player{
+
     public Defenceman(String firstName, String lastName){
        super(firstName, lastName, PlayerType.DEFENCE_MAN);
     }
 
     @Override
     public void setBehavior(){
-        //TODO
+        if (rand.nextBoolean()) {
+            behavior = new BlockBehavior();
+        } else {
+            behavior = new PassBehavior();
+        }
     }
 }
