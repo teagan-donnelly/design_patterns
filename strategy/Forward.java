@@ -7,6 +7,7 @@ package strategy;
 public class Forward extends Player {
 
     public Forward(String firstName, String lastName){
+        //calls parent class
        super(firstName, lastName, PlayerType.FORWARD);
     }
 

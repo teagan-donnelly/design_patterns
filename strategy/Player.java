@@ -27,11 +27,11 @@ public abstract class Player {
 
     public String play(){
         setBehavior();
-        return behavior.play();
+        return "\n--- " + toString() + " ---\n" + behavior.play();
     }
 
     public String toString(){
-        return firstName + " " + lastName + " " + playerType;
+        return playerType.label + ": " + firstName + " " + lastName;
     }
 
     public PlayerType getPlayerType(){

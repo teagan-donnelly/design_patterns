@@ -12,6 +12,7 @@ public class Goalie extends Player {
 
     @Override
     public void setBehavior(){
+        //randomly chooses which action the player will perform 
         if (rand.nextBoolean()) {
             behavior = new BlockGoalBehavior();
         } else {

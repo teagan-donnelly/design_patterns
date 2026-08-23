@@ -11,7 +11,7 @@ public class BlockGoalBehavior implements Behavior {
         //creates varibles for the color of the player
         String blue = "\u001B[34m";
         String red = "\u001B[31m";
-        //will turn the text color back to normal
+        //turns the text color back to normal
         String reset = "\u001B[0m";
         return "Blocks the Goal!!!\n"
                 + red + "   o" + reset + "       .      " + blue + "o" + reset + "\n"

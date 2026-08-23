@@ -18,6 +18,7 @@ public class Team {
 
     //methods listed in the UML diagram
     public void addTeamMember(String firstName, String lastName, PlayerType playerType){
+        //determines what type of player to create and then adds them to the players array
         if (playerType == PlayerType.GOALIE){
             Goalie goalie = new Goalie(firstName, lastName);
             players.add(goalie);
@@ -31,9 +32,12 @@ public class Team {
     }
 
     public void executePlay(PlayerType playerType){
+        //traverses the players array
         for(int i = 0; i < players.size(); i++ ){
             Player player = players.get(i);
 
+            /*gets the PlayerType and if it matches the parameter it will
+            print out the play() method*/
             if (player.getPlayerType() == playerType){
                 System.out.println(player.play());
             }
