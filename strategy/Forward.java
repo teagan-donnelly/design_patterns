@@ -1,3 +1,7 @@
+/**
+ * Written By Teagan Donnelly
+ * CSCE 247 002
+ */
 package strategy;
 
 public class Forward extends Player {
@@ -8,6 +12,7 @@ public class Forward extends Player {
 
     @Override
     public void setBehavior(){
+        //randomly chooses if the forward passes or shoots the puck
         if (rand.nextBoolean()) {
             behavior = new ShootBehavior();
         } else {

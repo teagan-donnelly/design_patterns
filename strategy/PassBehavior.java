@@ -1,10 +1,23 @@
+/**
+ * Written By Teagan Donnelly
+ * CSCE 247 002
+ */
 package strategy;
 
 public class PassBehavior implements Behavior{
 
     @Override
     public String play(){
-        return "Passes the puck!";
+        //creates varibles for the color of the player
+        String blue = "\u001B[34m";
+        //will turn the text color back to normal
+        String reset = "\u001B[0m";
+        return "Passes the puck!!!\n"
+                + blue
+                + "   o             o\n"
+                + "  /|-\\         /|\\\n"
+                + "  / \\_    .   _/ \\\n"
+                + reset;
     }
 
 }

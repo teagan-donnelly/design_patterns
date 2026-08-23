@@ -1,3 +1,7 @@
+/**
+ * Written By Teagan Donnelly
+ * CSCE 247 002
+ */
 package strategy;
 import java.util.ArrayList;
 

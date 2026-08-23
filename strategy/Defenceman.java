@@ -1,3 +1,7 @@
+/**
+ * Written By Teagan Donnelly
+ * CSCE 247 002
+ */
 package strategy;
 
 public class Defenceman extends Player{
