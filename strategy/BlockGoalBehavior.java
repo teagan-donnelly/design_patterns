@@ -14,9 +14,9 @@ public class BlockGoalBehavior implements Behavior {
         //turns the text color back to normal
         String reset = "\u001B[0m";
         return "Blocks the Goal!!!\n"
-                + red + "   o" + reset + "       .      " + blue + "o" + reset + "\n"
-                + red + "  /|-\\" + reset + "            " + blue + "/|\\" + reset + "\n"
-                + red + "  / \\" + reset + "            " + blue + "/ \\" + reset;
+            + "   o                    o\n"
+            + "  -" + red + "|" + reset + "-\\        .       /-" + blue + "|" + reset + "-\n"
+            + "  " + red + "/ \\" + reset + " \\_            _/ " + blue + "/ \\" + reset + "\n";
     }
     
 }

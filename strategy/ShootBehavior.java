@@ -13,11 +13,10 @@ public class ShootBehavior implements Behavior {
         //will turn the text color back to normal
         String reset = "\u001B[0m";
         return "Shoots at the Goal!!!\n"
-                + blue
-                + "   o              ||\n"
-                + "  /|-\\      .      ||\\\n"
-                + "  / \\_            ||\n"
-                + reset;
+            + "   o                         |\\\n"
+            + "  -" + blue + "|" + reset + "-\\                       | \\\n"
+            + "  " + blue + "/ \\" + reset + " \\_       .             |  \\\n"
+            + "                             \n";
     }
 
 }

@@ -13,11 +13,9 @@ public class PassBehavior implements Behavior{
         //will turn the text color back to normal
         String reset = "\u001B[0m";
         return "Passes the puck!!!\n"
-                + blue
-                + "   o             o\n"
-                + "  /|-\\         /|\\\n"
-                + "  / \\_    .   _/ \\\n"
-                + reset;
+            + "   o                 o\n"
+            + "  -" + blue + "|" + reset + "-\\             /-" + blue + "|" + reset + "-\n"
+            + "  " + blue + "/ \\" + reset + " \\_     .   _/ " + blue + "/ \\" + reset + "\n";
     }
 
 }
