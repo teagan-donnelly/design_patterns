@@ -3,11 +3,17 @@ package designPatterns.observer;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * 
+ * StockMarketPublisher manages stocks and notifies observers when
+ * there is a change in stock price
+ * @author Teagan Donnelly
+ */
 public class StockMarketPublisher implements Subject {
     
     private ArrayList<Observer> observers = new ArrayList<>();
     private HashMap<String, Stock> stocks = new HashMap<>();
-
+    
     public void registerObserver(Observer observer){
         observers.add(observer);
     }

@@ -1,7 +1,7 @@
 package designPatterns.observer;
 
 /**
- * Observer for different stocks
+ * Observer that watches stock changes for a specific sector
  * @author Teagan Donnelly
  */
 
@@ -11,6 +11,14 @@ public abstract class Observer {
     private Sector sector;
     private String color;
 
+    /**
+     * Creates an observer and registers it with the given publisher
+     * @param publisher the subject being observed
+     * @param name the name of the observer
+     * @param sector the sector the observer monitors
+     * @param color the color the observer will print as in the console
+     */
+
     public Observer(Subject publisher, String name, Sector sector, String color){
         this.name = name;
         this.sector = sector;
@@ -19,6 +27,11 @@ public abstract class Observer {
         publisher.registerObserver(this);
     }
 
+    /**
+     * responds to a stock update if the stock is in this observer's sector
+     * @param stock the stock that was being updated
+     * @param direction the direction of the price change
+     */
     public void update(Stock stock, Direction direction){
             if (stock.getSector() == sector) {
 
