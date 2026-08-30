@@ -1,7 +1,6 @@
 package designPatterns.observer;
 
 /**
- * 
  * Sector holds the possible sectors of stocks
  * @author Teagan Donnelly
  */
