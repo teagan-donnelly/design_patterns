@@ -6,7 +6,9 @@ package decorator;
  */
 public class Sword extends GearAdder {
 
+    Player player; 
+
     public Sword(Player player){
-        //TODO
+        this.player = player;
     }
 }
