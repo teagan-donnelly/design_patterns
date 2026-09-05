@@ -8,8 +8,9 @@ public abstract class Player {
     protected String name;
     protected ArrayList<String> character = new ArrayList<>();
 
-    public void Player(ArrayList<String> character, String name){
-        //TODO
+    public Player(ArrayList<String> character, String name){
+        this.character = character;
+        this.name = name;
     }
 
     public String getName(){
@@ -17,6 +18,13 @@ public abstract class Player {
     }
 
     public String toString(){
-        //TODO
+        String characterString = "";
+
+        for(String line : character){
+            characterString += line + "\n";
+        }
+
+        return characterString;
     }
+
 }
