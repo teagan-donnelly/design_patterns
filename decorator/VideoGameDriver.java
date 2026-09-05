@@ -25,7 +25,7 @@ public class VideoGameDriver {
 			System.out.println("Here's our warrior: ");
 			System.out.println(warrior);
 
-			/*displayMenu();
+			displayMenu();
 			int userOption = getUserChoice();
 
 			if (userOption == 0) {
@@ -36,8 +36,8 @@ public class VideoGameDriver {
 				warrior = new Armor(warrior);
 			} else if (userOption == 3) {
 				break;
-			}
-		} */
+			} 
+		} 
 
 		System.out.println("Goodbye");
 	}
