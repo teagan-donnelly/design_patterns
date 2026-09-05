@@ -1,14 +1,15 @@
 package decorator;
 
 /**
- * 
+ * creates a shield that can be added to the character 
  * @author Teagan Donnelly
  */
 public class Shield extends GearAdder{
-
-    Player player;
-    
+    /**
+     * creates a shield and adds it to the given player
+     * @param player the player that is getting the shield
+     */
     public Shield(Player player){
-        this.player = player;
+        super(player, FileReader.getLines("shield.txt"));
     }
 }
