@@ -11,6 +11,6 @@ public class Warrior extends Player {
      * @param name the name of the Player
      */
     public Warrior(String name){
-        super(FileReader.getLines("warrior.txt"), name);
+        super(FileReader.getLines("decorator/warrior.txt"), name);
     }
 }

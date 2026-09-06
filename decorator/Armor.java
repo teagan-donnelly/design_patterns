@@ -10,6 +10,6 @@ public class Armor extends GearAdder{
      * @param player the player that is getting the armor
      */
     public Armor(Player player){
-        super(player, FileReader.getLines("armor.txt"));
+        super(player, FileReader.getLines("decorator/armor.txt"));
     }
 }

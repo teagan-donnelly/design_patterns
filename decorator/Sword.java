@@ -10,6 +10,6 @@ public class Sword extends GearAdder {
      * @param player the player that sword is being added to
      */
     public Sword(Player player){
-        super(player, FileReader.getLines("sword.txt"));
+        super(player, FileReader.getLines("decorator/sword.txt"));
     }
 }

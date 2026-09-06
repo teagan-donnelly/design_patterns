@@ -3,7 +3,7 @@ package decorator;
 import java.util.ArrayList;
 
 /**
- * 
+ * creates a Player with the given parameters
  * @author Teagan Donnelly
  */
 public abstract class Player {

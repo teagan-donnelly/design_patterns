@@ -10,6 +10,6 @@ public class Shield extends GearAdder{
      * @param player the player that is getting the shield
      */
     public Shield(Player player){
-        super(player, FileReader.getLines("shield.txt"));
+        super(player, FileReader.getLines("decorator/shield.txt"));
     }
 }
