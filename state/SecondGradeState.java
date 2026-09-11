@@ -6,4 +6,15 @@ package state;
  */
 public class SecondGradeState {
 
+    public SecondGradeState(VocabularyList vocabularyList){
+
+    }
+
+    public void increaseGrade(){
+
+    }
+
+    public void decreaseGrade(){
+        
+    }
 }
