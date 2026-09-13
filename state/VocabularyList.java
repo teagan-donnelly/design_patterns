@@ -21,11 +21,11 @@ public class VocabularyList {
     }
 
     public String getNextDefinition(){
-        state.getNextDefinition();
+        return state.getNextDefinition();
     }
 
-    public String getMatchingWord(){
-        state.getMatchingWord();
+    public String getMatchingWord(String definition){
+        return state.getMatchingWord(definition);
     }
 
     public void increaseGrade(){
