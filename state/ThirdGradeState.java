@@ -31,5 +31,6 @@ public class ThirdGradeState extends State{
     @Override 
     public void decreaseGrade(){
         vocabularyList.setState(vocabularyList.getSecondGradeState());
+        System.out.println("You are now in the Second Grade");
     }
 }
