@@ -8,7 +8,7 @@ public class FirstGradeState extends State{
 
     public FirstGradeState(VocabularyList vocabularyList){
         super(vocabularyList);
-        words = FileReader.getWords("first.txt");
+        words = FileReader.getWords("state/first.txt");
     }
 
     @Override 
