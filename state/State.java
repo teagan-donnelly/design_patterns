@@ -1,4 +1,5 @@
 package state;
+import java.util.Random;
 import java.util.random.*;
 
 /**
@@ -12,7 +13,7 @@ public abstract class State {
     private Random rand;
 
     public State(VocabularyList vocabularyList){
-
+        this.vocabularyList = vocabularyList;
     }
 
     public String getNextDefinition(){
