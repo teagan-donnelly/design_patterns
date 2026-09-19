@@ -1,3 +1,5 @@
+
+
 /**
  * 
  * @author Teagan Donnelly
@@ -22,9 +24,9 @@ public class Word {
 
         String border = cyan + "+--------------------------------------------------------------+" + reset;
         String blankLine = cyan + "|                                                              |" + reset;
-        String wordLine = cyan + "| " + reset + "Word: " + cyan + word.toUpperCase() + "                                                     |" + reset;
+        String wordLine = cyan + "| " + reset + "Word: " + cyan + word.toUpperCase() + " ".repeat(55 - word.length()) + "|" + reset;
 
-        return border + wordLine + blankLine + blankLine + blankLine + border;
+        return border + "\n" + wordLine + "\n" + blankLine + "\n" + blankLine + "\n" + blankLine + "\n" + border;
     }
 
     public String getFlashCardBack(){
@@ -33,11 +35,11 @@ public class Word {
         String pink = "\u001B[38;5;213m";
 
         String border = cyan + "+--------------------------------------------------------------+" + reset;
-        String wordLine = cyan + "| " + reset + "Word: " + cyan + word.toUpperCase() + "                                                     |" + reset;
-        String typeLine = cyan + "| " + reset + "Part of Speech: " + cyan + type + "                                                     |" + reset;
-        String defLine = cyan + "| " + reset + "Definition: " + pink + definition + "                                                     |" + reset;
-        String sentLine = cyan + "| " + reset + "Sentance: " + pink + sentance + "                                                     |" + reset;
+        String wordLine = cyan + "| " + reset + "Word: " + cyan + word.toUpperCase() + " ".repeat(55 - word.length()) + "|" + reset;
+        String typeLine = cyan + "| " + reset + "Part of Speech: " + cyan + type + " ".repeat(45 - type.length()) + "|" + reset;
+        String defLine = cyan + "| " + reset + "Definition: " + pink + definition + " ".repeat(49 - definition.length()) + cyan + "|" + reset;
+        String sentLine = cyan + "| " + reset + "Sentence: " + pink + sentance + " ".repeat(51 - sentance.length()) + cyan + "|" + reset;
 
-        return border + wordLine + typeLine + defLine + sentLine;
+        return border + "\n" + wordLine + "\n" + typeLine + "\n" + defLine + "\n" + sentLine + "\n" + border;
     }
 }
