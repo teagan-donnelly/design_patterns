@@ -37,8 +37,37 @@ public class Word {
         String border = cyan + "+--------------------------------------------------------------+" + reset;
         String wordLine = cyan + "| " + reset + "Word: " + cyan + word.toUpperCase() + " ".repeat(55 - word.length()) + "|" + reset;
         String typeLine = cyan + "| " + reset + "Part of Speech: " + cyan + type + " ".repeat(45 - type.length()) + "|" + reset;
-        String defLine = cyan + "| " + reset + "Definition: " + pink + definition + " ".repeat(49 - definition.length()) + cyan + "|" + reset;
-        String sentLine = cyan + "| " + reset + "Sentence: " + pink + sentance + " ".repeat(51 - sentance.length()) + cyan + "|" + reset;
+       
+        String defLine;
+        if (definition.length() <= 49) {
+            defLine = cyan + "| " + reset + "Definition: " + pink + definition
+                    + " ".repeat(49 - definition.length()) + cyan + "|" + reset;
+        } else {
+            String firstPart = definition.substring(0, 49);
+            String secondPart = definition.substring(49);
+
+            defLine = cyan + "| " + reset + "Definition: " + pink + firstPart + cyan + "|\n"
+                    + "|             " + pink + secondPart
+                    + " ".repeat(49 - secondPart.length()) + cyan + "|" + reset;
+        }
+
+        String sentLine = cyan + "| " + reset + "Sentence: " + pink;
+
+        int maxLength = 51;
+        int start = 0;
+
+        while (start < sentance.length()) {
+            int end = Math.min(start + maxLength, sentance.length());
+            String part = sentance.substring(start, end);
+
+            if (start != 0) {
+                sentLine += cyan + "|           " + pink;
+            }
+
+            sentLine += part + " ".repeat(maxLength - part.length()) + cyan + "|\n";
+
+            start = end;
+        }
 
         return border + "\n" + wordLine + "\n" + typeLine + "\n" + defLine + "\n" + sentLine + "\n" + border;
     }
