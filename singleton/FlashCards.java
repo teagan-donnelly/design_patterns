@@ -1,4 +1,5 @@
-import java.util.random.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * 
@@ -11,15 +12,20 @@ public class FlashCards {
     private ArrayList<Word> words;
 
     private FlashCards(){
-
+        this.rand = new Random();
+        words = FileReader.getWords();
     }
 
     public static FlashCards getInstance(){
-
+        if (flashCards == null) {
+			flashCards = new FlashCards();
+		}
+		return flashCards;
     }
 
     public Word getWord(){
-        
+        int index = rand.nextInt(words.size());
+        return words.get(index);
     }
 
 }

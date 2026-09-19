@@ -9,8 +9,11 @@ public class Word {
     private String definition;
     private String sentance;
 
-    public Word(String word, String type, Sting definition, String sentace){
-
+    public Word(String word, String type, String definition, String sentace){
+        this.word = word;
+        this.type = type;
+        this. definition = definition;
+        this.sentance = sentace;
     }
 
     public String getFlashCardFront(){
