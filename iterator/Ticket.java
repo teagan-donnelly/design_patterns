@@ -20,7 +20,7 @@ public class Ticket {
     }
 
     public String toString(){
-        return name + "(Difficulty:" + difficulty +  ")" +  " - " + teamMember;
+        return difficulty.ASCII + name + "(Difficulty:" + difficulty +  ")" +  " - " + teamMember;
     }
 
 }

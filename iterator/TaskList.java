@@ -38,11 +38,12 @@ public class TaskList {
 	}
 
     public String toString(){
-        String result = name + ":\n";
+        String reset = "\u001B[0m";
+        String result = reset + name + ":\n";
 
         for (Ticket ticket : tickets){
             if(ticket != null){
-                result += ticket.toString() + "\n";
+                result += reset + "- " + ticket.toString() + "\n";
             }
         }
         return result;
