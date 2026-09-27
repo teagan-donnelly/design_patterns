@@ -11,6 +11,7 @@ public class TaskList {
 
     public TaskList(String name){
         this.name = name;
+        tickets = new Ticket[100]; 
     }
 
     public void addTicket(String name, String teamMember, Difficulty difficulty){
