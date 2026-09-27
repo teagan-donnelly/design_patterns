@@ -10,24 +10,31 @@ public class TaskList {
     private String name;
 
     public TaskList(String name){
-
+        this.name = name;
     }
 
     public void addTicket(String name, String teamMember, Difficulty difficulty){
-
+        Ticket ticket = new Ticket(name, teamMember, difficulty);
+        addTicket(ticket);
     }
 
     public void addTicket(Ticket ticket){
-
+        tickets[count] = ticket;
+        count++;
     }
 
     public Ticket getTicket(String name){
-
+        for(Ticket ticket : tickets){
+            if(ticket != null && ticket.getName().equals(name)){
+                return ticket;
+            }
+        }
+        return null;
     }
 
-    public TaskListIterator createIterator(){
-
-    }
+    public TaskListIterator createIterator() {
+		return new TaskListIterator(tickets);
+	}
 
     public String toString(){
         
