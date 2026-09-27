@@ -5,7 +5,7 @@ import java.util.Iterator;
  * 
  * @author Teagan Donnelly
  */
-public class TaskListIterator implements Iterator{
+public class TaskListIterator implements Iterator<Ticket>{
 
     private Ticket[] tickets;
     private int position;

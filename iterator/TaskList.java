@@ -37,6 +37,13 @@ public class TaskList {
 	}
 
     public String toString(){
-        
+        String result = name + ":\n";
+
+        for (Ticket ticket : tickets){
+            if(ticket != null){
+                result += ticket.toString() + "\n";
+            }
+        }
+        return result;
     }
 }

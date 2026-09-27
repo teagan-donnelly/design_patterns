@@ -46,6 +46,7 @@ public class SCRUMBoard {
     }
 
     public String toString(){
-        
+        return projectName + "\n" + "Todo:\n" + todo.toString() 
+        +"Doing:\n" + doing.toString() +"Done:\n" + done.toString() ;
     }
 }
