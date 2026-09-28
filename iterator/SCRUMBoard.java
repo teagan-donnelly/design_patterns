@@ -70,6 +70,6 @@ public class SCRUMBoard {
      * @see java.lang.Object#toString()
      */
     public String toString(){
-        return projectName + "\n" + "\n" + todo.toString() + "\n" + doing.toString() + "\n" + done.toString() ;
+        return "\u001B[0m" + "*****" + projectName + "*****" + "\n" + "\n" + todo.toString() + "\n" + doing.toString() + "\n" + done.toString() ;
     }
 }
